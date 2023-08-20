@@ -1,4 +1,4 @@
-# avatrade-project
+# vue-project
 
 ## Project setup
 ```

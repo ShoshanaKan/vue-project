@@ -1,0 +1,33 @@
+$headerColor: green;
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+  body {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #212121;
+    font-family:arial;
+  }
+  h1{
+    color: $headerColor;
+    margin-bottom: 14px;
+  }
+
+  button {
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: green;
+  }
+  button:hover {
+    background-color: transparent;
+  }

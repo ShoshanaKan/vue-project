@@ -1,14 +1,15 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-  },
-  getters: {
+    isAuthenticated: localStorage.getItem('loggedIn'),
+    username: ''
   },
   mutations: {
+    setAuthenticated(state, value) {
+      state.isAuthenticated = value
+    },
   },
-  actions: {
-  },
-  modules: {
-  }
-})
+  actions: {},
+  modules: {}
+});

@@ -1,7 +1,7 @@
 <template>
   <div class="input-field">
       <div class="form__group field">
-        <input v-model="value" :id="inputId" :placeholder="label" :required="required" @blur="validate"  class="form__field"  @input="$emit('update:modelValue', $event.target.value)">
+        <input v-model="value" :id="inputId" :type="type" :placeholder="label" :required="required" @blur="validate"  class="form__field"  @input="$emit('update:modelValue', $event.target.value)">
         <label :for="inputId" class="form__label">{{ label }}</label>
         <div v-if="error" class="error-message">{{ error }}</div>
       </div>
@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'InputField',
-  props: ['modelValue', 'label', 'required', 'inputId'],
+  props: ['modelValue', 'label', 'required', 'inputId', 'type'],
   data() {
     return {
       value: this.modelValue,

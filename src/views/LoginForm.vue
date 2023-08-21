@@ -3,7 +3,7 @@
     <h1>Login</h1>
     <form @submit.prevent="login">
       <InputField v-model="username" inputId="username" label="User name" required="true"></InputField>
-      <InputField v-model="password" inputId="password" label="Password" required="true"></InputField>
+      <InputField v-model="password" inputId="password" label="Password" required="true"  type="password"></InputField>
       <div>
         <button type="submit">Login</button>
       </div>
